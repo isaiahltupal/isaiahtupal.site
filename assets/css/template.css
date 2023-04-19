@@ -16,6 +16,7 @@
 body{
     background-color: var(--dark_gray);
     font-family: 'Courier New', Courier, monospace;
+    color: var(--light_gray);
 }
 
 #topbar_container{
@@ -28,7 +29,7 @@ body{
     display: flex;
     position: fixed; 
     top: 0; /* Position the navbar at the top of the page */
-    width: 85%; /* Full width */
+    width: 80%; /* Full width */
     max-height: 60px;
 
 }
@@ -40,7 +41,7 @@ body{
 #topbar a{
     text-decoration: none; 
     color: var(--light_gray);
-    font-size: 25px;
+    font-size: 18px;
 }
 
 #topbar_right{
@@ -67,7 +68,7 @@ body{
 
 #topbar_left #cursor_box{
     background-color:#9ece58;
-    height: 25px;
+    height: 100%;
     margin-top: 0;
     width: 10px;
     margin-left: 5px;
