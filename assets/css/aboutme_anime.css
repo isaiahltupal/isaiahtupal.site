@@ -1,3 +1,7 @@
+.block0{
+    background-color: var(--dark_gray);
+}
+
 .block1{
     background-color: var(--red);
 }

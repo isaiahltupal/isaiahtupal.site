@@ -10,6 +10,9 @@ var light_gray = $(":root").css("--light_gray");
 //generates an array of div representing a line of code
 function generate_line_code(){
 
+    block0 = document.createElement("div");
+    block0.setAttribute("class","block0");
+
     block1 = document.createElement("div");
     block1.setAttribute("class","block1");
 
@@ -23,25 +26,34 @@ function generate_line_code(){
 
     line_wrapper = document.createElement("div");
     line_wrapper.setAttribute("class","line_code");
-    line_wrapper.append(block1,block2,block3);
+    line_wrapper.append(block0,block1,block2,block3);
     line_wrapper.setAttribute("style","text-align:left");
 
     return line_wrapper;
 }
 
 function random_width(element){
-    let width = Math.random()*9 + 1 
-    element.setAttribute("style",`width: ${width}em`);
+    let width = Math.random()*7 + 1 
+    element.setAttribute("style",`width: ${width}vw`);
     return element;
 }
 
+function random_indent(element){
+    indents = [0,2,4];
+    index = Math.floor(Math.random() * indents.length);
+    width = indents[index];
+    element.setAttribute("style",`width: ${width}vw`);
+}
 
 
 //add eight lines of code here
 for(i = 0; i<8;i++){
     linecode = generate_line_code();
 
-    for(j=0;j<3;j++){
+
+    random_indent(linecode.childNodes[0])
+
+    for(j=1;j<4;j++){
         linecode.childNodes[j]= random_width(linecode.childNodes[j]);
     }
 
@@ -65,7 +77,8 @@ function code_animation_loop(){
 
     linecode = generate_line_code();
 
-    for(j=0;j<3;j++){
+    random_indent(linecode.childNodes[0])
+    for(j=1;j<4;j++){
         linecode.childNodes[j]= random_width(linecode.childNodes[j]);
         console.log(linecode.childNodes[j]);
     }
