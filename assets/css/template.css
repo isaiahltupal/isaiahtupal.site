@@ -74,3 +74,6 @@ body{
     margin-left: .46vh;
 }
 
+.content_container{
+    min-height: 100vh;
+}
