@@ -60,9 +60,15 @@
     min-height: 80vh;
 }
 
+#aboutme_block{
+    text-align: center;
+}
+
 #aboutme{
-    width: 90vw;
-    margin: auto;
+    width: 30vw;
+    display: inline-block;
+    text-align: left;
+    vertical-align:middle;
 
 }
 
@@ -73,9 +79,17 @@
 
 #aboutme_desc p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.3em;
+    font-size: 1em;
+    
 }
 
 #aboutme_desc p span{
     color:var(--yellow);
+}
+
+#aboutme_anime_canvas_container{
+    width: 30vw;
+    display: inline-block;
+    vertical-align:middle;
+    
 }

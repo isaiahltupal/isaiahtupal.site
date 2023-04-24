@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/template.css">
     <link rel="stylesheet" href="assets/css/homepage.css">
+    <link rel="stylesheet" href="assets/css/aboutme_anime.css">
+
     <title>Home</title>
 </head>
 <body>
@@ -52,21 +54,29 @@
             </div>
 
             <div id="aboutme_container">
-                <div id="aboutme">
-                    <h3 id="aboutme_header">About me</h3>
-                    <div id="aboutme_desc">
-                        
-                        <p>Hi, I'm Isaiah! I love working with AI and engineering. My passion for programming started when I brought an old laptop back to life with Linux back in Highschool. During the pandemic, I got into machine learning and data science, and it's been really interesting.</p>
+                
+                <div id="aboutme_block">
 
-                        <p>Right now, I'm pursuing a double degree program in BS Computer Engineering and MS Electronics and Communications Engineering at De La Salle University. </p>
+                    <div id="aboutme">
+                        <h3 id="aboutme_header">About me</h3>
+                        <div id="aboutme_desc">
+                    
+                            <p>Hi, I'm Isaiah! I love working with AI and engineering. My passion for programming started when I brought an old laptop back to life with Linux back in Highschool. During the pandemic, I got into machine learning and data science, and it's been really interesting.</p>
+                            <p>Right now, I'm pursuing a double degree program in BS Computer Engineering and MS Electronics and Communications Engineering at De La Salle University. </p>
+                            <p>When I'm not coding, I enjoy hobbies like watching anime, reading manga, and playing guitar. I've worked on a bunch of projects and learned a lot about <span>Python</span>, <span>C/C++</span>, <span>HTML/CSS/Javascript</span>, and other technologies like <span>Java</span>, <span>SQL</span>, and <span>PHP</span>.</p>
+                    
+                            <p>I'm always looking to improve myself both professionally and personally. I'm really excited about the possibilities of programming and love to learn and grow as a developer.</p>
+                    
+                        </div>
+                    </div>
+                    
+                    <div class="anime_container" id="aboutme_anime_canvas_container">
+                        <div class="anime_canvas"  id="aboutme_canvas">
 
-                        <p>When I'm not coding, I enjoy hobbies like watching anime, reading manga, and playing guitar. I've worked on a bunch of projects and learned a lot about <span>Python</span>, <span>C/C++</span>, <span>HTML/CSS/Javascript</span>, and other technologies like <span>Java</span>, <span>SQL</span>, and <span>PHP</span>.</p>
-                        
-                        <p>I'm always looking to improve myself both professionally and personally. I'm really excited about the possibilities of programming and love to learn and grow as a developer.</p>
-                                  
-
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -75,7 +85,9 @@
         <footer>Designed by Isaiah Tupal</footer>
     </div>
 
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
     <script src="assets/js/anime.min.js"></script>
     <script src="assets/js/topbar.js"></script>
+    <script src="assets/js/aboutme_anime.js"></script>
 </body>
 </html>

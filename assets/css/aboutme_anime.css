@@ -1,0 +1,28 @@
+.block1{
+    background-color: var(--red);
+}
+
+.block2{
+    background-color: var(--light_gray);
+}
+
+.block3{
+    background-color: var(--blue);
+}
+
+
+#aboutme_canvas div div:not(.cursor_box){
+    margin-top: 1em;
+    margin-left: 1em;
+    height: .5em;
+    display: inline-block;
+
+}
+
+div .cursor_box{
+    background-color: var(--green);
+    width: .3em;
+    height: .7em;
+    display: inline-block;
+    margin-left: 1em
+}
