@@ -2,6 +2,9 @@
     css for the homepage
 */
 
+#hero_container{
+    height: 100vh;
+}
 
 #hero{
     margin:0 auto;
@@ -12,12 +15,12 @@
 
 #hero-greeting{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 15px;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
 #hero-name{
-    font-size: 50px;
+    font-size: 5em;
     color: var(--green);
     margin: 0px;
 }
@@ -26,6 +29,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top:10px;
     width:50vw;
+    font-size: 2em;
 }
 
 
@@ -50,4 +54,28 @@
 
 #github-link:hover svg{
     fill: var(--green)
+}
+
+#aboutme_container{
+    min-height: 80vh;
+}
+
+#aboutme{
+    width: 90vw;
+    margin: auto;
+
+}
+
+#aboutme_header{
+    color: var(--green);
+    font-size: 2em;
+}
+
+#aboutme_desc p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3em;
+}
+
+#aboutme_desc p span{
+    color:var(--yellow);
 }
